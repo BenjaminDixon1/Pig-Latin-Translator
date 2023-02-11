@@ -1,0 +1,19 @@
+def main():
+  sentence = input('Type English here ')
+  sentence = sentence.split(' ')
+  for i in sentence:
+
+
+    pig = 'ay'
+
+    if len(i) > 0 and i.isalpha():
+      word = i.lower()
+      first = word[0]
+      new_word = word[1:] + first + pig
+      print(new_word)
+    else:
+      print('Please input a latin character only sentence')
+
+
+while True:
+  main()
